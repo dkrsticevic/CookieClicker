@@ -4,42 +4,42 @@
       "id": 0,
       "name": "Cookie",
       "price": 10,
-      "imgUrl": "/public/imgs/Cookie.jpg",
+      "imgUrl": "/imgs/Cookie.jpg",
       "mps": 1
     },
     {
       "id": 1,
       "name": "Baker",
       "price": 100,
-      "imgUrl": "/public/imgs/chef.jpg",
+      "imgUrl": "/imgs/chef.jpg",
       "mps": 1
     },
     {
       "id": 2,
       "name": "Kitchen",
       "price": 1000,
-      "imgUrl": "/public/imgs/kitchen.jpg",
+      "imgUrl": "/imgs/kitchen.jpg",
       "mps": 10
     },
     {
       "id": 3,
       "name": "Farmer",
       "price": 10000,
-      "imgUrl": "/public/imgs/farmer.jpg",
+      "imgUrl": "/imgs/farmer.jpg",
       "mps": 50
     },
     {
       "id": 4,
       "name": "Factory",
       "price": 100000,
-      "imgUrl": "/public/imgs/factory.jpg",
+      "imgUrl": "/imgs/factory.jpg",
       "mps": 300 
     },
     {
       "id": 5,
       "name": "Bank",
       "price": 1000000,
-      "imgUrl": "/public/imgs/bank.jpg",
+      "imgUrl": "/imgs/bank.jpg",
       "mps": 1000 
     }
   ]
