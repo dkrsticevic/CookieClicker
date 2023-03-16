@@ -13,30 +13,30 @@ export function Game() {
     console.log(purchaseRate)
 
     return (
-        <Container >
+        <Container fluid="true">
         <Row>
-            <div className="col">
-            <Row md={1} xs={1} lg={2} className="g-3"> 
-                {sI.map(item => (
-                    <Col key={item.id}><StoreItem {...item} purchaseRate={purchaseRate}/></Col>
-                ))}
-            </Row>
-            </div>
-            <div className="col col-md-auto"> 
-                <Card className="g-3">
+            <Col xs={12} md={12} lg={4}>
+                <Card style={{marginBottom: "15px"}}>
                     <Card.Body className="d-flex flex-column">
                         <Card.Title>
                             Purchase Rate
                         </Card.Title>
                         <ButtonGroup aria-label="Basic exampled" >
-                            <Button variant="secondary" disabled={purchaseRate === 1 ? true : false} onClick={() => setPurchaseRate(1)}>1x</Button>
-                            <Button variant="secondary" disabled={purchaseRate === 10 ? true : false} onClick={() => setPurchaseRate(10)}>10x</Button>
-                            <Button variant="secondary" disabled={purchaseRate === 100 ? true : false} onClick={() => setPurchaseRate(100)}>100x</Button>
+                            <Button variant="dark" disabled={purchaseRate === 1 ? true : false} onClick={() => setPurchaseRate(1)}>1x</Button>
+                            <Button variant="dark" disabled={purchaseRate === 10 ? true : false} onClick={() => setPurchaseRate(10)}>10x</Button>
+                            <Button variant="dark" disabled={purchaseRate === 100 ? true : false} onClick={() => setPurchaseRate(100)}>100x</Button>
                         </ButtonGroup>
                     </Card.Body>
                 </Card> 
                 <Total/>
-            </div>
+            </Col>
+            <Col xs={12} md={12} lg={8}>
+                <Row md={2} xs={1} lg={2} className="g-3"> 
+                    {sI.map(item => (
+                        <Col key={item.id}><StoreItem {...item} purchaseRate={purchaseRate}/></Col>
+                    ))}
+                </Row>
+            </Col>
         </Row>
         </Container>    
     )

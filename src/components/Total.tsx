@@ -13,7 +13,7 @@ export function Total() {
       });
 
     return (
-        <Card style={{minWidth: "350px"}}>
+        <Card style={{marginBottom: "15px"}}>
             <Card.Body>
             <Card.Title>
             {formatCurrency(cI.reduce((total, cartItem) => {
