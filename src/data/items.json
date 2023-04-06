@@ -39,7 +39,7 @@
       "id": 5,
       "name": "Bank",
       "price": 1000000,
-      "imgUrl": "/imgs/bank.jpg",
+      "imgUrl": "./imgs/bank.jpg",
       "mps": 1000 
     }
   ]
